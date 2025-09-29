@@ -3,32 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>event handlers</title>
+    <title>Popup Image Gallery with Navigation</title>
     <link rel="stylesheet" href="./css/eventhandler.css" />
   </head>
   <body>
-        <h1>My Image Gallery</h1>
-        <div class="gallery">
-          <img src="./img/2801964.jpg" onmouseover ="src ='./img/1937338.jpg'"  onmouseout="src='./img/2801964.jpg'" alt="Image 1" />
-          <img src="./img/2801892.jpg"  onmouseover ="src ='./img/1937299.jpg'"  onmouseout="src='./img/2801892.jpg'" alt="Image 2" />
-          <img src="./img/10723194.jpg"  onmouseover ="src ='./img/2801892.jpg'" onmouseout="src='./img/10723194.jpg'" alt="Image 3" />
-          <img src="./img/1937299.jpg"  onmouseover ="src ='./img/2801935.jpg'" onmouseout="src='./img/1937299.jpg'" alt="Image 4" />
-          <img src="./img/1937338.jpg"  onmouseover ="src ='./img/2801964.jpg'" onmouseout="src='./img/1937338.jpg'" alt="Image 5" />
-          <img src="./img/2801892.jpg"  onmouseover ="src ='./img/10865176.jpg'"  onmouseout="src='./img/2801892.jpg'" alt="Image 6" />
-          <img src="./img/2801935.jpg"  onmouseover ="src ='./img/1937299.jpg'" onmouseout="src='./img/2801935.jpg'" alt="Image 7" />
-          <img src="./img/2801964.jpg"  onmouseover ="src ='./img/10865179.jpg'" onmouseout="src='./img/2801964.jpg'" alt="Image 8" />
-          <img src="./img/10723194.jpg"  onmouseover ="src ='./img/10865239.jpg'" onmouseout="src='./img/10723194.jpg'" alt="Image 9" />
-          <img src="./img/5229312.jpg" onmouseover ="src ='./img/10865296.jpg'"  onmouseout="src='./img/5229312.jpg'" alt="Image 10" />
-          <img src="./img/5229388.jpg" onmouseover ="src ='img/thumbbig-303042.webp'" onmouseout="src='./img/5229388.jpg'"  alt="Image 11" />
-          <img src="./img/5468009.jpg"  onmouseover ="src ='img/vlcsnap-2023-06-21-20h07m36s044.png'" onmouseout="src='./img/5468009.jpg'" alt="Image 12" />
-          <img src="./img/5563267.jpg"  onmouseover ="src ='img/vlcsnap-2023-06-21-20h07m47s400.png'" onmouseout="src='./img/5563267.jpg'" alt="Image 13" />
-          <img src="./img/5468009.jpg"  onmouseover ="src ='./img/10865296.jpg'" onmouseout="src='./img/5468009.jpg'" alt="Image 14" />
-          <img src="/img/10723194.jpg" onmouseover ="src ='./img/5563267.jpg'" onmouseout="src='./img/10723194.jpg'" alt="Image 15" />
-        </div>
-        <div id="lightbox" class="lightbox">
-          <span class="close">&times;</span>
-          <img class="lightbox-content" id="lightbox-img" />
-        </div>
-         <script src="./js/event handlers.js"></script>
+    <header>
+      <h1>My Image Gallery</h1>
+      <p>scroll through your favorite images 
+        whether is in the clothes section,anime
+         section or device section.</p>
+    </header>
+    <div class="gallery nature">
+      <h2>Anime</h2>
+      <img
+        src="./img/10723194.jpg"
+        onmouseover="src ='./img/5563267.jpg'"
+        onmouseout="src='./img/10723194.jpg'"
+        alt="Nature 1"
+      />
+      <img
+        src="./img/10865176.jpg"
+        onmouseover="src ='./img/1937299.jpg'"
+        onmouseout="src='./img/10865176.jpg'"
+        alt="Nature 2"
+      />
+      <img
+        src="./img/10865179.jpg"
+        onmouseover="src ='./img/1937338.jpg'"
+        onmouseout="src='./img/10865179.jpg'"
+        alt="Nature 3"
+      />
+      <img src="./img/lava style chidori.jfif"
+      onmouseover ="src ='img/thumbbig-303042.webp'" 
+      onmouseout="src='./img/lava style chidori.jfif'"
+      alt="">
+      <img src="./img/thumbbig-303042.webp"
+      onmouseover ="src ='img/vlcsnap-2023-06-21-20h07m47s400.png'"
+      onmouseout="src='./img/thumbbig-303042.webp'"
+      alt="">
+    </div>
+    <div class="gallery animals">
+      <h2>Clothes</h2>
+      <img
+        src="./img/hanger (1).jpg"
+        onmouseover="src ='./img/2801892.jpg'"
+        onmouseout="src='./img/hanger (1).jpg'"
+        alt="Animal 1"
+      />
+      <img
+        src="./img/hanger (2).jpg"
+        onmouseover="src ='./img/2801935.jpg'"
+        onmouseout="src='./img/hanger (2).jpg'"
+        alt="Animal 2"
+      />
+      <img
+        src="./img/hanger (3).jpg"
+        onmouseover="src ='./img/2801964.jpg'"
+        onmouseout="src='./img/hanger (3).jpg'"
+        alt="Animal 3"
+      />
+      <img
+        src="./img/hanger (5).jpg"
+        onmouseover="src ='./img/10865296.jpg'"
+        onmouseout="src='./img/hanger (5).jpg'"
+        alt="Animal 4"
+      />
+      <img
+        src="./img/hanger (7).jpg"
+        onmouseover ="src ='./img/5563267.jpg'" 
+        onmouseout="src='./img/hanger (7).jpg'"
+        alt="Animal 5"
+      />
+    </div>
+
+    <div class="gallery cars">
+      <h2>Devices</h2>
+      <img
+        src="./img/hanger (12).jpg"
+        onmouseover="src ='./img/10865176.jpg'"
+        onmouseout="src='./img/hanger (12).jpg'"
+        alt="Car 1"
+      />
+      <img
+        src="./img/download 1.jpeg"
+        onmouseover="src ='./img/10865179.jpg'"
+        onmouseout="src='./img/download 1.jpeg'"
+        alt="Car 2"
+      />
+      <img
+        src="./img/hanger (8).jpg"
+        onmouseover ="src ='./img/10865239.jpg'"  
+        onmouseout="src='./img/hanger (8).jpg'"
+        alt="Car 3"
+      />
+       <img
+        src="./img/download 2.jpeg"
+         onmouseover ="src ='img/vlcsnap-2023-06-21-20h07m36s044.png'"
+        onmouseout="src='./img/download 2.jpeg'"
+        alt="Car 4"
+      />
+      <img src="./img/download3.jpeg"
+      onmouseover ="src ='img/vlcsnap-2023-06-21-20h07m47s400.png'"
+      onmouseout="src='./img/download3.jpeg'"
+      alt="">
+    </div>
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img id="lightbox-img" alt="Big view" />
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+    <script src="./js/event handlers.js"></script>
   </body>
 </html>
